@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Almacafé - Sistema de Procesamiento de Camiones y Clasificación de Café
 
 Este proyecto es una aplicación desarrollada como parte de la asignatura *"Mantenimiento y Pruebas de Software"* de la carrera *Ingeniería de Software* en la *Universidad Surcolombiana. El sistema está diseñado para automatizar el procesamiento de camiones y la clasificación de sacos de café en la empresa **Almacafé*.
@@ -62,3 +63,6 @@ El sistema permite:
 - Node.js y npm instalados en tu máquina.
 - Python 3.8 o superior instalado.
 - Git instalado.
+=======
+# proyecto-mantenimiento
+>>>>>>> bcf0316835a7fea04eed4f464bf2f7825fc0d472
