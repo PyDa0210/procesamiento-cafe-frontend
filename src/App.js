@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Sidebar from "./components/Sidebar";
+import MainScreen from "./components/MainScreen";
+import ProcesarCamionForm from "./components/ProcesarCamionForm";
+import Agenda from "./components/Agenda";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: "flex" }}>
+      <Sidebar />
+      <div style={{ marginLeft: "200px", padding: "20px", width: "100%" }}>
+        <Routes>
+          <Route path="/" element={<MainScreen />} />
+          <Route path="/procesar-camiones" element={<ProcesarCamionForm />} />
+          <Route path="/agenda" element={<Agenda />} />
+        </Routes>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

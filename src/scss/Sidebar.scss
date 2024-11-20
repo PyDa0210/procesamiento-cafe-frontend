@@ -1,0 +1,51 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; // Ancho reducido
+    height: 100vh;
+    background-color: #ffffff; // Fondo blanco
+    color: #3c6e47; // Verde oscuro para texto
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  
+    h3 {
+      font-size: 1.8rem; // Título ligeramente más pequeño
+      font-weight: bold;
+      color: #4caf50; // Verde medio para el título
+      margin-bottom: 30px;
+    }
+  
+    nav {
+      width: 100%;
+  
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          margin-bottom: 20px;
+  
+          a {
+            display: block;
+            text-decoration: none;
+            color: #3c6e47; // Verde oscuro
+            font-size: 1.2rem; // Fuente ajustada para menor ancho
+            font-weight: 500;
+            padding: 8px 12px; // Espaciado reducido
+            border-radius: 5px;
+            transition: all 0.3s ease;
+  
+            &:hover {
+              background-color: #a5d6a7; // Verde claro para fondo hover
+              color: #ffffff; // Blanco para texto en hover
+            }
+          }
+        }
+      }
+    }
+  }
+  

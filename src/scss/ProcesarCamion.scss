@@ -1,0 +1,96 @@
+// Variables de colores
+$background-color: #ffffff; // Fondo blanco
+$title-color: #3c6e47;      // Verde oscuro para el título
+$text-color: #4caf50;       // Verde mediano para el texto
+$button-color: #388e3c;     // Verde intenso para botones
+$button-hover-color: #2e7d32; // Verde más oscuro al pasar el mouse
+$border-color: #ddd;        // Color para bordes de inputs
+
+// Estilos para el contenedor principal
+.procesar-camion {
+  background-color: $background-color;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: $title-color;
+    margin-bottom: 20px;
+  }
+
+  div {
+    margin-bottom: 15px;
+
+    label {
+      font-size: 1.1rem;
+      color: $title-color;
+
+      input {
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        margin-left: 10px;
+        width: calc(100% - 20px); // Ajustar el tamaño del input
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          border-color: $text-color;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: $button-color;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  // Mensaje de error
+  .error-message {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  // Resultados
+  .resultados {
+    margin-top: 20px;
+
+    h3 {
+      color: $title-color;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: $text-color;
+      margin-bottom: 5px;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.agenda {
+    padding: 20px;
+    background-color: #ffffff; // Fondo blanco
+    color: #3c6e47; // Texto verde oscuro
+    font-family: 'Arial', sans-serif;
+  
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #4caf50; // Verde medio
+      margin-bottom: 20px;
+    }
+  
+    .filtros {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+  
+      label {
+        font-size: 1.2rem;
+        margin-right: 10px;
+      }
+  
+      input[type="date"] {
+        font-size: 1rem;
+        padding: 5px 10px;
+        margin-right: 15px;
+        border: 1px solid #cfd8dc; // Gris claro
+        border-radius: 5px;
+  
+        &:focus {
+          border-color: #4caf50; // Verde medio
+          outline: none;
+        }
+      }
+  
+      button {
+        font-size: 1rem;
+        padding: 8px 15px;
+        background-color: #4caf50; // Verde medio
+        color: #ffffff; // Texto blanco
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: #3c6e47; // Verde oscuro
+        }
+      }
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 1rem;
+  
+      th {
+        background-color: #4caf50; // Verde medio
+        color: white;
+        padding: 10px;
+        text-align: left;
+        border-bottom: 2px solid #c8e6c9; // Verde claro
+      }
+  
+      td {
+        padding: 10px;
+        border-bottom: 1px solid #e0e0e0; // Gris claro
+      }
+  
+      tr:hover {
+        background-color: #f1f8e9; // Verde claro (hover)
+      }
+  
+      tr:nth-child(even) {
+        background-color: #f9fbe7; // Verde claro alternado
+      }
+    }
+  
+    .no-resultados {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #9e9e9e; // Gris medio
+      margin-top: 20px;
+    }
+  }
+  
