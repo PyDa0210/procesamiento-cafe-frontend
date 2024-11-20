@@ -1,8 +1,8 @@
 # Almacafé - Sistema de Procesamiento de Camiones y Clasificación de Café
 
-Este proyecto es una aplicación desarrollada como parte de la asignatura **"Mantenimiento y Pruebas de Software"** de la carrera **Ingeniería de Software** en la **Universidad Surcolombiana**. El sistema está diseñado para automatizar el procesamiento de camiones y la clasificación de sacos de café en la empresa **Almacafé**.
+Este proyecto es una aplicación desarrollada como parte de la asignatura *"Mantenimiento y Pruebas de Software"* de la carrera *Ingeniería de Software* en la *Universidad Surcolombiana. El sistema está diseñado para automatizar el procesamiento de camiones y la clasificación de sacos de café en la empresa **Almacafé*.
 
-## **Descripción del Proyecto**
+## *Descripción del Proyecto*
 
 El sistema permite:
 - Procesar la descarga de camiones transportando café y calcular automáticamente:
@@ -13,37 +13,37 @@ El sistema permite:
   - Fecha y hora de salida.
   - Número y placa del camión.
   - Peso vacío y cargado del camión.
-- Llevar un historial detallado de los camiones procesados a través del módulo **Agenda**, donde se pueden consultar y filtrar los registros por fecha.
+- Llevar un historial detallado de los camiones procesados a través del módulo *Agenda*, donde se pueden consultar y filtrar los registros por fecha.
 
-## **Tecnologías Utilizadas**
+## *Tecnologías Utilizadas*
 
-### **Frontend**
-- **React.js**: Desarrollo de la interfaz de usuario interactiva y dinámica.
-- **React Router**: Manejo de rutas y navegación entre módulos.
-- **SCSS**: Estilización y diseño consistente, con colores y tipografía amigables para el usuario.
+### *Frontend*
+- *React.js*: Desarrollo de la interfaz de usuario interactiva y dinámica.
+- *React Router*: Manejo de rutas y navegación entre módulos.
+- *SCSS*: Estilización y diseño consistente, con colores y tipografía amigables para el usuario.
 
-### **Backend**
-- **FastAPI**: Framework para manejar las solicitudes HTTP, cálculos y lógica de negocio.
-- **SQLite**: Base de datos ligera para almacenar los registros de camiones y clasificaciones.
+### *Backend*
+- *FastAPI*: Framework para manejar las solicitudes HTTP, cálculos y lógica de negocio.
+- *SQLite*: Base de datos ligera para almacenar los registros de camiones y clasificaciones.
 
-### **Herramientas Adicionales**
-- **Git y GitHub**: Control de versiones y colaboración.
-- **Axios**: Para la comunicación entre el frontend y el backend.
+### *Herramientas Adicionales*
+- *Git y GitHub*: Control de versiones y colaboración.
+- *Axios*: Para la comunicación entre el frontend y el backend.
 
-## **Características Principales**
+## *Características Principales*
 
-### **Procesamiento de Camiones**
+### *Procesamiento de Camiones*
 - Cálculo automático de:
-  - Peso de la carga (`peso_total - peso_vacio`).
+  - Peso de la carga (peso_total - peso_vacio).
   - Clasificación de sacos:
-    - **Especiales**: Sacos con peso exacto de 70 kg.
-    - **Defectuosos**: Sacos fuera de especificación.
+    - *Especiales*: Sacos con peso exacto de 70 kg.
+    - *Defectuosos*: Sacos fuera de especificación.
   - Espacios ocupados en los contenedores (capacidad máxima de 1000 sacos por contenedor).
 - Validación de datos ingresados, como:
   - El peso total debe ser mayor al peso vacío.
   - Formato correcto para la placa del camión (solo letras mayúsculas y números, máximo 6 caracteres).
 
-### **Agenda**
+### *Agenda*
 - Registro automático de cada camión procesado.
 - Visualización de una tabla con:
   - Fecha y hora de salida del camión.
@@ -51,17 +51,14 @@ El sistema permite:
   - Peso vacío, cargado y peso por saco.
 - Filtrado de registros por rangos de fechas.
 
-### **Interfaz de Usuario**
-- **Pantalla de inicio**: Un mensaje de bienvenida y orientación al usuario para utilizar el menú lateral.
-- **Sidebar**: Menú de navegación fijo con acceso a:
+### *Interfaz de Usuario*
+- *Pantalla de inicio*: Un mensaje de bienvenida y orientación al usuario para utilizar el menú lateral.
+- *Sidebar*: Menú de navegación fijo con acceso a:
   - Inicio.
   - Procesamiento de Camiones.
   - Agenda.
 
-## **Instalación y Ejecución**
-
-### **Requisitos Previos**
+### *Requisitos Previos*
 - Node.js y npm instalados en tu máquina.
 - Python 3.8 o superior instalado.
-- Git instalado.
-
+- Git instalado.
